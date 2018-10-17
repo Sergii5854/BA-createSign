@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>BA createSign </title>
+</head>
+<body>
+<h1>
+    Написати функцію для формування цифрового підпису данних (можна використати сторонню бібліотеку).
+</h1>
+<h3>
+
+    Вхідні параметри: privateKey - текстовий ключ (приватний - ключ знає відправник та отримувач данних), data - дані у вигляді тексту (будуть відправлені в публічну мережу)
+    Функція повертає текст, що буде також відправлений в публічний доступ.
+
+</h3>
+<p>
+    Приклад:
+    <pre>
+    var sign = createSign(privateKey, data) // sign === “....SOMESYMBOLS….”;
+    http.post(‘...’, { data, sign }); // Лише прикла. Відправляти дані не потрібно)
+
+    </pre>
+</p>
+
+<div>
+    <label>Start Text</label>
+    <div id="data"></div>
+    <br><br>
+
+    <label>Encrypted Text</label>
+    <div id="encrypted"></div>
+    <br>
+
+    <label>Decrypted Text</label>
+    <div id="decrypted"></div>
+
+    <br>
+    <label>OUT Text</label>
+    <div id="message"></div>
+
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/aes.js"></script>
+
+<script src="./script.js"></script>
+</body>
+</html>
