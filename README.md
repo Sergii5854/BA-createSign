@@ -13,4 +13,4 @@
 
 
 
-### Link to: [view](https://sergii5854.github.io/BA-createSign.github.io/) .
+### Link to: [view](https://sergii5854.github.io/BA-createSign/) .
